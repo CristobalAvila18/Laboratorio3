@@ -1,4 +1,9 @@
 #include <stdio.h>
+
+void imprimir_total (int me){
+	printf("El total a pagar es:\n$%d",me);
+	}
+
 int cuota_20(){
 
 	int i, me, mesant;
@@ -12,14 +17,9 @@ int cuota_20(){
 	return me;
 }
 
-void imprimir_total (int me){
-	printf("El total a pagar es:\n$%d",me);
-	}
-
 int main(){
 	 int z;
 	z=cuota_20();
 	imprimir_total(z);
 	return 0;
 }
-
