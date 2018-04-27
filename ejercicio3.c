@@ -1,12 +1,25 @@
 #include <stdio.h>
-int main (void){
-float mes,pago_mes,pago_total;
-int i;
-/*En esta parte nos mostrara el valor de las 20 cuotas que tenemos que pagar*/
-printf("Mostrador del valor de las 20 cuotas que tienes que pagar \n");
-    for (i=1; i<=20; i++){
-    printf("Valor de cuota %d\n",i);
+int cuota_20(){
+
+	int i, me, mesant;
+	printf("Ingrese el valor de la primera cuota:\n");
+	scanf("%d",&mesant);
+	for (i=1;i<=20;i++){
+        mesant=mesant*2;
+		me=mesant*2;
+		printf("$%d\n",me);
+	}
+	return me;
 }
-return 0;
+
+void imprimir_total (int me){
+	printf("El total a pagar es:\n$%d",me);
+	}
+
+int main(){
+	 int z;
+	z=cuota_20();
+	imprimir_total(z);
+	return 0;
 }
 
